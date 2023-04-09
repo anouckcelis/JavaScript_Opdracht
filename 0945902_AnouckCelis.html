@@ -155,8 +155,12 @@
         let errors = [];
         let errorsText = "";
 
+        //button functie toevoegen
+        document.getElementById('knop').addEventListener("click", validateForm());
+
         //In deze functie verbergen we de alerts bij het laden van de pagina
         document.body.addEventListener("load", paginaLaden(), false);
+
 
         function paginaLaden() {
         
@@ -234,8 +238,6 @@
 
         } 
         
-       //button functie toevoegen
-        document.getElementById('knop').addEventListener("click", validateForm);
 
 
 
